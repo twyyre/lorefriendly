@@ -1,0 +1,6 @@
+{
+    "type": "module",
+    "dependencies": {
+        "codemirror": "^6.0.1"
+    }
+}

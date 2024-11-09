@@ -1,0 +1,12 @@
+@keyframes animquickfadeout {
+    to {
+        opacity: 0;
+        height: 0;
+        display: none;
+    }
+}
+@keyframes animquickfadein {
+    to {
+        opacity: 1;
+    }
+}
