@@ -1,7 +1,7 @@
 const express = require('express');
 const { exit } = require('process');
 const router = express.Router()
-const dbconn = require("../core/dbcon.js");
+const dbconn = require("../dbcon.js");
 const jwt = require('jsonwebtoken');
 const { error } = require('console');
 
