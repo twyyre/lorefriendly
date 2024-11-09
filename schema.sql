@@ -16,6 +16,21 @@ CREATE TABLE quests (
     -- Define foreign keys if necessary (e.g., reward_item_id might reference an items table)
     -- CONSTRAINT fk_reward_item FOREIGN KEY (reward_item_id) REFERENCES items(item_id)
 );
+CREATE TABLE triggers (
+    trigger_id INT PRIMARY KEY AUTO_INCREMENT,
+    trigger_name VARCHAR(100) NOT NULL,
+    description TEXT,
+    trigger_type INT(1) DEFAULT 0,
+    trigger_target INT(1) DEFAULT 0,
+    target_Type INT(1) DEFAULT 0,
+    activator INT(1) DEFAULT 0,
+    activator_type INT(1) DEFAULT 0,
+    repeatable BOOLEAN DEFAULT FALSE,
+    conditions INT DEFAULT 1, 
+    status INT(1) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+);
 CREATE TABLE items (
     item_id INT PRIMARY KEY AUTO_INCREMENT,
     item_name VARCHAR(100) NOT NULL,

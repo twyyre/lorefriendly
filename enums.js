@@ -1,9 +1,14 @@
 // enums
-const questEnums = Object.freeze({
+const questStatus = Object.freeze({
     NOT_STARTED: 0,
     IN_PROGRESS: 1,
     COMPLETED: 2,
     FAILED: 3
+});
+const questType = Object.freeze({
+    SIDEQUEST: 0,
+    MAINQUEST: 1,
+    TASK: 2
 });
 const raceEnums = Object.freeze({
     HUMAN: 0,
@@ -30,10 +35,14 @@ const factionEnums = Object.freeze({
     FACTION5: 5,
     FACTION6: 6
 });
-
+const triggerTypeEnums = Object.freeze({
+    DIALOGUE: 0,
+    AREA: 1,
+    ATTACK: 2,
+    DEATH: 3,
+    TIME: 4
+});
 module.exports = questEnums;
 module.exports = raceEnums;
 module.exports = factionEnums;
-
-
-
+module.exports = questType;
