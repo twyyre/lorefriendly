@@ -2,22 +2,19 @@ CREATE TABLE quests (
     quest_id INT PRIMARY KEY AUTO_INCREMENT,
     quest_name VARCHAR(100) NOT NULL,
     description TEXT,
-    quest_giver VARCHAR(100), -- Name or ID of the NPC or entity giving the quest
-    quest_type ENUM('main', 'side', 'repeatable') DEFAULT 'side',
-    required_level INT DEFAULT 1, -- Minimum level required to accept the quest
-    reward_gold INT DEFAULT 0, -- Gold reward for completing the quest
-    reward_exp INT DEFAULT 0, -- Experience reward for completing the quest
-    reward_item_id INT, -- ID of a specific item given as a reward (referencing items table)
-    status ENUM('not_started', 'in_progress', 'completed', 'failed') DEFAULT 'not_started',
-    is_repeatable BOOLEAN DEFAULT FALSE,
-    start_location VARCHAR(100), -- Location where the quest begins
-    end_location VARCHAR(100), -- Location where the quest is completed
+    quest_trigger VARCHAR(100), -- Name or ID of the NPC or entity giving the quest
+    quest_type INT(1) DEFAUL 0, --0-sidequest 1-main quest 2-task
+    repeatable BOOLEAN DEFAULT FALSE,
+    conditions INT DEFAULT 1, 
+    rewards INT DEFAULT 0, -- for completing the quest
+    status INT(1) DEFAULT 0,
     time_limit INT, -- Time limit to complete the quest (in minutes), if any
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
     -- Define foreign keys if necessary (e.g., reward_item_id might reference an items table)
-    CONSTRAINT fk_reward_item FOREIGN KEY (reward_item_id) REFERENCES items(item_id)
+    -- CONSTRAINT fk_reward_item FOREIGN KEY (reward_item_id) REFERENCES items(item_id)
 );
 CREATE TABLE items (
     item_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -39,8 +36,8 @@ CREATE TABLE items (
 CREATE TABLE characters (
     character_id INT PRIMARY KEY AUTO_INCREMENT,
     character_name VARCHAR(100) NOT NULL,
-    race ENUM('human', 'elf', 'dwarf', 'orc', 'gnome', 'tiefling', 'other') NOT NULL,
-    class ENUM('warrior', 'mage', 'rogue', 'archer', 'cleric', 'paladin', 'bard', 'other') NOT NULL,
+    race ENUM(0, 1, 2, 3, 4) NOT NULL,
+    class ENUM() NOT NULL,
     level INT DEFAULT 1,
     experience INT DEFAULT 0,
     health INT DEFAULT 100,

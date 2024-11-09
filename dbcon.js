@@ -10,10 +10,8 @@ const dbconn = mysql.createConnection({
   password: dbPassword, 
   database: dbName
 });
-
 dbconn.connect((err) => {
   if (err) throw err;
   console.log('Connected to database!');
 });
-
 module.exports = dbconn; //or use export default router;
