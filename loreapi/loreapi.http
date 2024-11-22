@@ -1,0 +1,6 @@
+@loreapi_HostAddress = http://localhost:5057
+
+GET {{loreapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,15 @@
+C:\Users\hp\lorefriendly\bin\Debug\net8.0\lorefriendly.exe
+C:\Users\hp\lorefriendly\bin\Debug\net8.0\lorefriendly.deps.json
+C:\Users\hp\lorefriendly\bin\Debug\net8.0\lorefriendly.runtimeconfig.json
+C:\Users\hp\lorefriendly\bin\Debug\net8.0\lorefriendly.dll
+C:\Users\hp\lorefriendly\bin\Debug\net8.0\lorefriendly.pdb
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.AssemblyInfoInputs.cache
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.AssemblyInfo.cs
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.csproj.CoreCompileInputs.cache
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.sourcelink.json
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.dll
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\refint\lorefriendly.dll
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.pdb
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\lorefriendly.genruntimeconfig.cache
+C:\Users\hp\lorefriendly\obj\Debug\net8.0\ref\lorefriendly.dll
