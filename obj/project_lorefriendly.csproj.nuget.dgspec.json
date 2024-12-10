@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\lorefriendly\\loreapi\\loreapi.csproj": {}
+    "C:\\Users\\hp\\project_lorefriendly\\project_lorefriendly.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\lorefriendly\\loreapi\\loreapi.csproj": {
+    "C:\\Users\\hp\\project_lorefriendly\\project_lorefriendly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\lorefriendly\\loreapi\\loreapi.csproj",
-        "projectName": "loreapi",
-        "projectPath": "C:\\Users\\hp\\lorefriendly\\loreapi\\loreapi.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\project_lorefriendly\\project_lorefriendly.csproj",
+        "projectName": "project_lorefriendly",
+        "projectPath": "C:\\Users\\hp\\project_lorefriendly\\project_lorefriendly.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\lorefriendly\\loreapi\\obj\\",
+        "outputPath": "C:\\Users\\hp\\project_lorefriendly\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
